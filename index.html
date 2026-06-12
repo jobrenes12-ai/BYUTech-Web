@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYUTech | Inteligencia Artificial y Automatización Futurista</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyberDark: '#0B0F19',
+                        cyberCard: '#151D30',
+                        cyberNeon: '#00F0FF',
+                        cyberPurple: '#9D4EDD'
+                    },
+                    boxShadow: {
+                        neonGlow: '0 0 15px rgba(0, 240, 255, 0.4)',
+                        purpleGlow: '0 0 15px rgba(157, 78, 221, 0.4)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+        .font-future { font-family: 'Orbitron', sans-serif; }
+        .font-sans { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-cyberDark text-gray-100 font-sans antialiased selection:bg-cyberNeon selection:text-black">
+
+    <nav class="border-b border-gray-800 bg-cyberDark/80 backdrop-blur-md sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-widest text-cyberNeon font-future drop-shadow-[0_0_8px_rgba(0,240,255,0.6)]">
+            BYUTech
+        </div>
+        <div class="space-x-6 text-sm font-semibold tracking-wide">
+            <a href="#inicio" class="hover:text-cyberNeon transition-colors">Inicio</a>
+            <a href="#producto" class="hover:text-cyberNeon transition-colors">IA Fiscal</a>
+            <a href="#soluciones" class="hover:text-cyberNeon transition-colors">Soluciones</a>
+            <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+            <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-white transition-colors">GitHub</a>
+        </div>
+    </nav>
+
+    <header id="inicio" class="relative min-h-[85vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyberNeon/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-1/4 left-1/3 w-96 h-96 bg-cyberPurple/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-4xl z-10">
+            <span class="inline-block border border-cyberNeon/30 text-cyberNeon bg-cyberNeon/5 text-xs uppercase tracking-widest font-future px-4 py-1.5 rounded-full mb-6 shadow-neonGlow">
+                Sistemas Agentivos Autónomos 2026
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold font-future tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-cyberNeon mb-6 leading-tight">
+                INTELIGENCIA ARTIFICIAL QUE<br>HACE CRECER SU NEGOCIO
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                Desarrollamos soluciones automáticas con un <span class="text-cyberNeon font-semibold">100% de efectividad</span>. Deje que nuestra IA maneje los procesos pesados mientras usted lidera el mercado.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/50671486745?text=Hola%20BYUTech,%20quiero%20automatizar%20mi%20empresa" target="_blank" class="bg-cyberNeon text-black font-bold font-future px-8 py-4 rounded shadow-neonGlow hover:bg-white transition-all transform hover:-translate-y-0.5 duration-200">
+                    AUTOMATIZAR MI EMPRESA HOY
+                </a>
+                <a href="#producto" class="border border-gray-700 bg-gray-900/40 font-semibold px-8 py-4 rounded hover:bg-gray-800/60 hover:border-gray-500 transition-all">
+                    Ver Tecnología
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="producto" class="py-24 bg-gradient-to-b from-cyberDark to-gray-950 px-6 border-t border-gray-900">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold font-future text-white mb-4">CONCILIACIÓN INTELIGENTE</h2>
+                <p class="text-cyberNeon font-future text-xs tracking-widest uppercase">Efectividad del 100% // Cero Errores Humanos</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <div class="bg-cyberCard p-8 rounded border border-gray-800 hover:border-cyberNeon/40 transition-all group">
+                    <div class="text-cyberNeon font-future text-2xl mb-4 opacity-70 group-hover:opacity-100">01 / CARGA</div>
+                    <h3 class="text-xl font-bold mb-2">Arrastre de Archivos</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Suba los archivos XML de Hacienda y los reportes PDF de sus bancos (BAC, BCR, etc.) directamente a la interfaz.</p>
+                </div>
+                <div class="bg-cyberCard p-8 rounded border border-gray-800 hover:border-cyberPurple/40 transition-all group">
+                    <div class="text-cyberPurple font-future text-2xl mb-4 opacity-70 group-hover:opacity-100">02 / PROCESO</div>
+                    <h3 class="text-xl font-bold mb-2">Análisis de IA</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Nuestra IA lee, interpreta y asocia cada depósito (incluso descripciones complejas de SINPE Móvil) con su factura exacta en segundos.</p>
+                </div>
+                <div class="bg-cyberCard p-8 rounded border border-gray-800 hover:border-cyberNeon/40 transition-all group">
+                    <div class="text-cyberNeon font-future text-2xl mb-4 opacity-70 group-hover:opacity-100">03 / REPORTE</div>
+                    <h3 class="text-xl font-bold mb-2">Control en Celular</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Reciba un reporte visual inmediato y alertas automatizadas a su WhatsApp detallando las cuentas pendientes de cobro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="soluciones" class="py-24 bg-cyberDark px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold font-future text-white mb-4">CATÁLOGO DE INFRAESTRUCTURA</h2>
+                <p class="text-gray-500 text-sm">Sistemas avanzados a la medida del mercado corporativo</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="border border-gray-800 p-8 rounded bg-gradient-to-br from-cyberCard to-cyberDark">
+                    <h3 class="text-lg font-bold font-future text-cyberNeon mb-2">BYUTech DataShield</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Filtro y anonimización de datos sensibles a nivel local. Use el poder de modelos de lenguaje masivos sin arriesgar secretos comerciales ni violar regulaciones de privacidad en Costa Rica.
+                    </p>
+                </div>
+                <div class="border border-gray-800 p-8 rounded bg-gradient-to-br from-cyberCard to-cyberDark">
+                    <h3 class="text-lg font-bold font-future text-cyberPurple mb-2">BYUTech Watchdog</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Monitoreo preventivo mediante scripts de Python y Bash. Nuestra IA predice saturación de servidores, fallas en bases de datos y caídas de red antes de que detengan la facturación de su negocio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-900 bg-gray-950 py-12 px-6 text-center text-sm text-gray-500">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-left">
+                <p class="font-future font-bold text-white tracking-widest text-base">BYUTech</p>
+                <p class="text-xs text-gray-600 mt-1">Automatización y Arquitecturas de Vanguardia</p>
+            </div>
+            <div class="text-gray-400">
+                San José, Costa Rica &copy; 2026
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
