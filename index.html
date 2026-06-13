@@ -270,6 +270,113 @@
 
         </div>
     </section>
+    <section id="casos" class="py-16 bg-black text-white w-full border-t border-gray-900">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="font-future text-2xl md:text-3xl font-bold tracking-widest text-[#00ff66] mb-4">CASOS DE ÉXITO</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto mb-12 text-sm">Seleccione un sector empresarial para desplegar la bitácora de soluciones y métricas de impacto optimizadas por BYUTech.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            
+            <button onclick="openByuModal('modal-construccion')" class="border border-gray-800 bg-gray-950 p-6 rounded-lg hover:border-[#00ff66] transition-all duration-300 group text-left focus:outline-none">
+                <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ CONSTRUCCIÓN ]</div>
+                <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">Caso Brenes & Morgan S.A. Sincronización de operaciones campo-oficina.</p>
+            </button>
+
+            <button onclick="openByuModal('modal-finanzas')" class="border border-gray-800 bg-gray-950 p-6 rounded-lg hover:border-[#00ff66] transition-all duration-300 group text-left focus:outline-none">
+                <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ FINANZAS & CONTABILIDAD ]</div>
+                <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">Automatización de planillas, costos por proyecto y conciliación fiscal.</p>
+            </button>
+
+            <button onclick="openByuModal('modal-soporte')" class="border border-gray-800 bg-gray-950 p-6 rounded-lg hover:border-[#00ff66] transition-all duration-300 group text-left focus:outline-none">
+                <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ SOPORTE TI / HELP DESK ]</div>
+                <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">Continuidad de alta disponibilidad y soporte preventivo Mesa v2.</p>
+            </button>
+
+            <button onclick="openByuModal('modal-seguridad')" class="border border-gray-800 bg-gray-950 p-6 rounded-lg hover:border-[#00ff66] transition-all duration-300 group text-left focus:outline-none">
+                <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ SEGURIDAD PRIVADA ]</div>
+                <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">Próximamente: Sistemas integrados de encriptación y monitoreo perimetral.</p>
+            </button>
+
+        </div>
+    </div>
+</section>
+
+<div id="modal-construccion" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 animate-fade-in">
+    <div class="bg-[#0d0d0d] border border-gray-800 max-w-lg w-full rounded-xl p-8 relative">
+        <button onclick="closeByuModal('modal-construccion')" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-xl">&times;</button>
+        <div class="text-[#00ff66] font-bold tracking-wider text-xs mb-2">// CASO DE ÉXITO: BRENES & MORGAN S.A.</div>
+        <h3 class="text-xl font-bold text-white mb-4">Sincronización de Operaciones en Campo y Oficina</h3>
+        <p class="text-gray-400 text-sm mb-6 leading-relaxed">Diseñamos un ecosistema digital centralizado que conecta los reportes diarios de las obras directamente con los servidores centrales mediante canales encriptados y automatizados, eliminando la lentitud en pedidos de materiales y desfases presupuestarios.</p>
+        <div class="border-t border-gray-900 pt-4">
+            <div class="text-xs text-gray-500 font-bold tracking-wide uppercase mb-2">Métricas de Impacto:</div>
+            <ul class="text-sm text-gray-300 space-y-2">
+                <li>• <strong class="text-[#00ff66]">40% de reducción</strong> en tiempos de espera para aprobación de órdenes de compra.</li>
+                <li>• <strong class="text-[#00ff66]">Tolerancia cero a pérdidas</strong> de información o planos en proyectos.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="modal-finanzas" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-[#0d0d0d] border border-gray-800 max-w-lg w-full rounded-xl p-8 relative">
+        <button onclick="closeByuModal('modal-finanzas')" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-xl">&times;</button>
+        <div class="text-[#00ff66] font-bold tracking-wider text-xs mb-2">// CASO DE ÉXITO: BRENES & MORGAN S.A.</div>
+        <h3 class="text-xl font-bold text-white mb-4">Automatización de Planillas y Conciliación Fiscal</h3>
+        <p class="text-gray-400 text-sm mb-6 leading-relaxed">Implementamos un motor de automatización inteligente basado en scripts autónomos que extrae, clasifica y procesa los datos financieros de proveedores y subcontratistas, cruzando la información con bancos de forma inmediata y eliminando la carga operativa manual.</p>
+        <div class="border-t border-gray-900 pt-4">
+            <div class="text-xs text-gray-500 font-bold tracking-wide uppercase mb-2">Métricas de Impacto:</div>
+            <ul class="text-sm text-gray-300 space-y-2">
+                <li>• <strong class="text-[#00ff66]">15+ horas semanales</strong> liberadas de trabajo manual repetitivo en contabilidad.</li>
+                <li>• <strong class="text-[#00ff66]">Eliminación del 100%</strong> de errores humanos en la asignación de costos por obra.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="modal-soporte" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-[#0d0d0d] border border-gray-800 max-w-lg w-full rounded-xl p-8 relative">
+        <button onclick="closeByuModal('modal-soporte')" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-xl">&times;</button>
+        <div class="text-[#00ff66] font-bold tracking-wider text-xs mb-2">// CASO DE ÉXITO: BRENES & MORGAN S.A.</div>
+        <h3 class="text-xl font-bold text-white mb-4">Continuidad Operativa de Alta Disponibilidad</h3>
+        <p class="text-gray-400 text-sm mb-6 leading-relaxed">Desplegamos nuestra Mesa de Ayuda Automatizada v2 para dar soporte técnico integral nivel 1 y 2 a toda la infraestructura de la firma. Realizamos monitoreo preventivo en segundo plano de servidores y equipos para erradicar tiempos muertos.</p>
+        <div class="border-t border-gray-900 pt-4">
+            <div class="text-xs text-gray-500 font-bold tracking-wide uppercase mb-2">Métricas de Impacto:</div>
+            <ul class="text-sm text-gray-300 space-y-2">
+                <li>• <strong class="text-[#00ff66]">&lt; 3 minutos</strong> de tiempo de respuesta garantizado ante cualquier incidente técnico.</li>
+                <li>• <strong class="text-[#00ff66]">99.9% de disponibilidad</strong> operativa (Uptime) en los sistemas del negocio.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="modal-seguridad" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-[#0d0d0d] border border-gray-800 max-w-lg w-full rounded-xl p-8 relative">
+        <button onclick="closeByuModal('modal-seguridad')" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-xl">&times;</button>
+        <div class="text-[#00ff66] font-bold tracking-wider text-xs mb-2">// SECTOR EN DESARROLLO</div>
+        <h3 class="text-xl font-bold text-white mb-4">Sistemas de Monitoreo Inteligente</h3>
+        <p class="text-gray-400 text-sm mb-6 leading-relaxed">Estamos diseñando arquitecturas modulares avanzadas de encriptación simétrica para centrales de monitoreo y endurecimiento de firewalls perimetrales. Próximamente publicaremos las métricas de este bloque central.</p>
+        <div class="border-t border-gray-900 pt-4">
+            <button onclick="closeByuModal('modal-seguridad')" class="bg-gray-900 hover:bg-gray-850 text-white text-xs px-4 py-2 rounded border border-gray-800 transition-all">Entendido</button>
+        </div>
+    </div>
+</div>
+
+<script>
+function openByuModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+    }
+}
+function closeByuModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+    }
+}
+</script>
 
 <footer class="border-t border-gray-900 bg-gray-950 py-12 px-6 text-center text-sm text-gray-500 w-full">
         <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
