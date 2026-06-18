@@ -282,14 +282,15 @@
                     <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ SOPORTE TI / HELP DESK ]</div>
                     <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">Continuidad de alta disponibilidad y soporte preventivo Mesa v2.</p>
                 </button>
-                <button onclick="openByuModal('modal-seguridad')" class="border border-gray-800 bg-gray-950 p-6 rounded-lg hover:border-[#00ff66] transition-all duration-300 group text-left focus:outline-none">
-                    <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ SEGURIDAD PRIVADA ]</div>
-                    <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">Próximamente: Sistemas integrados de encriptación y monitoreo perimetral.</p>
+                <button onclick="openByuModal('modal-iglesia')" class="border border-gray-800 bg-gray-950 p-6 rounded-lg hover:border-[#00ff66] transition-all duration-300 group text-left focus:outline-none">
+                    <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ SECTOR INSTITUCIONAL / ONG ]</div>
+                    <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">La Iglesia de Jesucristo de los Santos de los Últimos Días. Optimización de flujos.</p>
                 </button>
             </div>
         </div>
     </section>
 
+    <!-- Modales de información de casos de éxito -->
     <div id="modal-construccion" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="bg-[#0d0d0d] border border-gray-800 max-w-lg w-full rounded-xl p-8 relative">
             <button onclick="closeByuModal('modal-construccion')" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-xl">&times;</button>
@@ -333,6 +334,22 @@
                 <ul class="text-sm text-gray-300 space-y-2">
                     <li>• <strong class="text-[#00ff66]">&lt; 3 minutos</strong> de tiempo de respuesta automatizado ante incidentes informáticos.</li>
                     <li>• <strong class="text-[#00ff66]">99.9% de disponibilidad</strong> operativa (Uptime) en los sistemas críticos.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-iglesia" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-[#0d0d0d] border border-gray-800 max-w-lg w-full rounded-xl p-8 relative">
+            <button onclick="closeByuModal('modal-iglesia')" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-xl">&times;</button>
+            <div class="text-[#00ff66] font-bold tracking-wider text-xs mb-2">// DESPLIEGUE INSTITUCIONAL: LA IGLESIA DE JESUCRISTO</div>
+            <h3 class="text-xl font-bold text-white mb-4">Optimización de Infraestructura y Gestión de Datos</h3>
+            <p class="text-gray-400 text-sm mb-6 leading-relaxed">Colaboramos en el desarrollo técnico y soporte de arquitecturas de vanguardia para la automatización de flujos de información, control de registros y optimización de herramientas internas, garantizando alta disponibilidad y confidencialidad absoluta.</p>
+            <div class="border-t border-gray-900 pt-4">
+                <div class="text-xs text-gray-500 font-bold tracking-wide uppercase mb-2">Métricas e Impacto:</div>
+                <ul class="text-sm text-gray-300 space-y-2">
+                    <li>• <strong class="text-[#00ff66]">100% de integridad</strong> en el procesamiento y enrutamiento seguro de datos institucionales.</li>
+                    <li>• <strong class="text-[#00ff66]">Soporte de alta disponibilidad</strong> para la continuidad operativa de plataformas de soporte interno.</li>
                 </ul>
             </div>
         </div>
@@ -443,7 +460,7 @@
     <script>
         const secuenciaCyber = [
             { texto: "🤖 [BYUTECH CYBER360] Inicializando auditoría preventiva...", tipo: "normal", pausa: 1000 },
-            { texto: "📡 MÓDULO 1: Conectando con motores de inteligencia ShadowScan...", tipo: "normal", pausa: 1000 },
+            { texto: "📡 MÓDULO 1: Conectando con motores de intelligence ShadowScan...", tipo: "normal", pausa: 1000 },
             { texto: "🔍 Rastreando credenciales corporativas expuestas en la Dark Web...", tipo: "normal", pausa: 1200 },
             { texto: "🚨 ¡ALERTA! Se localizaron registros expuestos de su personal en foros OSINT.", tipo: "alerta", pausa: 1800 },
             { texto: "------------------------------------------------------------", tipo: "normal", pausa: 400 },
