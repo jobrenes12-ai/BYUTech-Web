@@ -30,6 +30,17 @@
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap');
         .font-future { font-family: 'Orbitron', sans-serif; }
         .font-sans { font-family: 'Inter', sans-serif; }
+        
+        /* Estilos añadidos para el simulador Cyber360 */
+        .linea-consola {
+            margin: 6px 0;
+            white-space: pre-wrap;
+            line-height: 1.5;
+            font-size: 14px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .alerta-roja { color: #ff3333; font-weight: bold; }
+        .exito-verde { color: #00ff66; font-weight: bold; }
     </style>
 </head>
 <body class="bg-cyberDark text-gray-100 font-sans antialiased selection:bg-cyberNeon selection:text-black">
@@ -41,6 +52,7 @@
         <div class="space-x-6 text-sm font-semibold tracking-wide">
             <a href="#inicio" class="hover:text-cyberNeon transition-colors">Inicio</a>
             <a href="#producto" class="hover:text-cyberNeon transition-colors">Módulos Core</a>
+            <a href="#cyber360" class="hover:text-cyberNeon transition-colors">Cyber360</a>
             <a href="#soluciones" class="hover:text-cyberNeon transition-colors">Infraestructura</a>
             <a href="#clientes" class="hover:text-cyberNeon transition-colors">Casos de Éxito</a>
             <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
@@ -126,6 +138,60 @@
             </div>
         </div>
     </section>
+
+    <!-- ============================================================ -->
+    <!-- NUEVA SECCIÓN: SUITE INTERACTIVA CYBER360 DE BYUTECH -->
+    <!-- ============================================================ -->
+    <section id="cyber360" class="py-24 bg-gray-950 px-6 border-t border-gray-900 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold font-future text-white mb-2 tracking-wide">🛡️ SUITE INTERACTIVA CYBER360</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-10 text-sm font-light">Protección perimetral proactiva, concientización de personal y resiliencia activa contra Ransomware.</p>
+
+            <!-- Consola de simulación estilo Hacker -->
+            <div id="consolaCyber" class="w-full max-w-3xl height h-[360px] bg-[#05070A] border-2 border-gray-800 rounded-lg p-5 shadow-inner overflow-y-auto text-left mb-8 mx-auto text-[#00ff66] font-mono box-border">
+                <div class="text-gray-500 text-center pt-32 text-sm">
+                    Pulse el comando de abajo para inicializar el entorno de diagnóstico interactivo Cyber360.
+                </div>
+            </div>
+
+            <!-- Botón Desparador -->
+            <button id="btnEjecutarDemo" onclick="ejecutarSimuladorWeb()" class="bg-transparent border border-[#00ff66] text-[#00ff66] font-bold font-future px-8 py-4 rounded shadow-[0_0_15px_rgba(0,255,102,0.1)] hover:bg-[#00ff66] hover:text-black hover:shadow-[0_0_25px_rgba(0,255,102,0.4)] transition-all duration-300 text-xs tracking-widest uppercase mb-16">
+                [ EJECUTAR DIAGNÓSTICO DE PRUEBA ]
+            </button>
+
+            <!-- Planes Diferenciados por tamaño de compañía -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-3xl mx-auto">
+                <div class="bg-cyberCard p-6 rounded border border-gray-800 hover:border-cyberNeon/40 transition-all duration-300">
+                    <h3 class="text-xl font-bold font-future text-cyberNeon mb-1">🏢 PYMES Y COMERCIOS</h3>
+                    <p class="text-xs text-gray-500 mb-4">Hasta 15 colaboradores corporativos</p>
+                    <div class="text-2xl font-bold text-[#00ff66] font-future mb-4">Planes a la Medida</div>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>• Auditoría ShadowScan mensual (Dark Web)</li>
+                        <li>• 2 Simulaciones anuales de Phishing ético</li>
+                        <li>• Nube de respaldos cifrados e inmutables</li>
+                    </ul>
+                </div>
+                <div class="bg-cyberCard p-6 rounded border border-gray-800 hover:border-cyberPurple/40 transition-all duration-300">
+                    <h3 class="text-xl font-bold font-future text-cyberPurple mb-1">🚀 CORPORATIVO / MEDIANA</h3>
+                    <p class="text-xs text-gray-500 mb-4">Más de 15 colaboradores corporativos</p>
+                    <div class="text-2xl font-bold text-[#00ff66] font-future mb-4">Evaluación Técnica</div>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>• Monitoreo defensivo continuo 24/7/365</li>
+                        <li>• Campañas automatizadas de Human Firewall con IA</li>
+                        <li>• Simulacros semestrales operativos de Ransomware</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Botón de Cierre de Venta directo a WhatsApp -->
+            <div class="mt-12">
+                <a href="https://wa.me/50671486745?text=Hola%20Walter,%20ejecuté%20la%20demo%20de%20Cyber360%20en%20la%20web%20y%20quiero%20cotizar%20el%20blindaje%20para%20mi%20empresa." target="_blank" class="inline-flex items-center gap-3 bg-[#25D366] text-white font-bold px-6 py-3.5 rounded-lg hover:bg-[#20ba5a] hover:shadow-[0_0_20px_rgba(37,211,102,0.4)] transition-all duration-300 text-sm">
+                    💬 Cotizar Cyber360 Vía WhatsApp Directo
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================ -->
 
     <section id="soluciones" class="py-24 bg-cyberDark px-6 border-t border-gray-900">
         <div class="max-w-5xl mx-auto">
@@ -217,7 +283,7 @@
                             Implementación de sistemas de encriptación simétrica para bitácoras digitales, protección táctica de flujos de video IP de cámaras de seguridad y endurecimiento de firewalls contra ataques de denegación de servicio (DDoS).
                         </p>
                         <div class="border-l-2 border-cyberNeon pl-4 my-4 italic text-xs text-gray-300 bg-cyberDark/40 py-2 rounded-r">
-                            "Con el blindaje perimetral de BYUTech aseguramos las bases de datos de nuestra central de alarmas, garantizando tolerancia cero a filtraciones e intrusiones externas."
+                            "Con el blindaje perimetral de BYUTech aseguramos las bases de datos de nuestra central de alarmas, generando tolerancia cero a filtraciones e intrusiones externas."
                             <span class="block text-right text-gray-500 text-[10px] font-semibold mt-1 font-sans">— Dirección de Seguridad de Activos</span>
                         </div>
                     </div>
@@ -270,168 +336,171 @@
 
         </div>
     </section>
+
     <section id="casos" class="py-16 bg-black text-white w-full border-t border-gray-900">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-        <h2 class="font-future text-2xl md:text-3xl font-bold tracking-widest text-[#00ff66] mb-4">CASOS DE ÉXITO</h2>
-        <p class="text-gray-400 max-w-2xl mx-auto mb-12 text-sm">Seleccione un sector empresarial para desplegar la bitácora de soluciones y métricas de impacto optimizadas por BYUTech.</p>
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="font-future text-2xl md:text-3xl font-bold tracking-widest text-[#00ff66] mb-4">CASOS DE ÉXITO</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-12 text-sm">Seleccione un sector empresarial para desplegar la bitácora de soluciones y métricas de impacto optimizadas por BYUTech.</p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            
-            <button onclick="openByuModal('modal-construccion')" class="border border-gray-800 bg-gray-950 p-6 rounded-lg hover:border-[#00ff66] transition-all duration-300 group text-left focus:outline-none">
-                <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ CONSTRUCCIÓN ]</div>
-                <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">Caso Brenes & Morgan S.A. Sincronización de operaciones campo-oficina.</p>
-            </button>
-
-            <button onclick="openByuModal('modal-finanzas')" class="border border-gray-800 bg-gray-950 p-6 rounded-lg hover:border-[#00ff66] transition-all duration-300 group text-left focus:outline-none">
-                <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ FINANZAS & CONTABILIDAD ]</div>
-                <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">Automatización de planillas, costos por proyecto y conciliación fiscal.</p>
-            </button>
-
-            <button onclick="openByuModal('modal-soporte')" class="border border-gray-800 bg-gray-950 p-6 rounded-lg hover:border-[#00ff66] transition-all duration-300 group text-left focus:outline-none">
-                <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ SOPORTE TI / HELP DESK ]</div>
-                <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">Continuidad de alta disponibilidad y soporte preventivo Mesa v2.</p>
-            </button>
-
-            <button onclick="openByuModal('modal-seguridad')" class="border border-gray-800 bg-gray-950 p-6 rounded-lg hover:border-[#00ff66] transition-all duration-300 group text-left focus:outline-none">
-                <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ SEGURIDAD PRIVADA ]</div>
-                <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">Próximamente: Sistemas integrados de encriptación y monitoreo perimetral.</p>
-            </button>
-
-        </div>
-    </div>
-</section>
-
-<div id="modal-construccion" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 animate-fade-in">
-    <div class="bg-[#0d0d0d] border border-gray-800 max-w-lg w-full rounded-xl p-8 relative">
-        <button onclick="closeByuModal('modal-construccion')" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-xl">&times;</button>
-        <div class="text-[#00ff66] font-bold tracking-wider text-xs mb-2">// CASO DE ÉXITO: BRENES & MORGAN S.A.</div>
-        <h3 class="text-xl font-bold text-white mb-4">Sincronización de Operaciones en Campo y Oficina</h3>
-        <p class="text-gray-400 text-sm mb-6 leading-relaxed">Diseñamos un ecosistema digital centralizado que conecta los reportes diarios de las obras directamente con los servidores centrales mediante canales encriptados y automatizados, eliminando la lentitud en pedidos de materiales y desfases presupuestarios.</p>
-        <div class="border-t border-gray-900 pt-4">
-            <div class="text-xs text-gray-500 font-bold tracking-wide uppercase mb-2">Métricas de Impacto:</div>
-            <ul class="text-sm text-gray-300 space-y-2">
-                <li>• <strong class="text-[#00ff66]">40% de reducción</strong> en tiempos de espera para aprobación de órdenes de compra.</li>
-                <li>• <strong class="text-[#00ff66]">Tolerancia cero a pérdidas</strong> de información o planos en proyectos.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div id="modal-finanzas" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-[#0d0d0d] border border-gray-800 max-w-lg w-full rounded-xl p-8 relative">
-        <button onclick="closeByuModal('modal-finanzas')" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-xl">&times;</button>
-        <div class="text-[#00ff66] font-bold tracking-wider text-xs mb-2">// CASO DE ÉXITO: BRENES & MORGAN S.A.</div>
-        <h3 class="text-xl font-bold text-white mb-4">Automatización de Planillas y Conciliación Fiscal</h3>
-        <p class="text-gray-400 text-sm mb-6 leading-relaxed">Implementamos un motor de automatización inteligente basado en scripts autónomos que extrae, clasifica y procesa los datos financieros de proveedores y subcontratistas, cruzando la información con bancos de forma inmediata y eliminando la carga operativa manual.</p>
-        <div class="border-t border-gray-900 pt-4">
-            <div class="text-xs text-gray-500 font-bold tracking-wide uppercase mb-2">Métricas de Impacto:</div>
-            <ul class="text-sm text-gray-300 space-y-2">
-                <li>• <strong class="text-[#00ff66]">15+ horas semanales</strong> liberadas de trabajo manual repetitivo en contabilidad.</li>
-                <li>• <strong class="text-[#00ff66]">Eliminación del 100%</strong> de errores humanos en la asignación de costos por obra.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div id="modal-soporte" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-[#0d0d0d] border border-gray-800 max-w-lg w-full rounded-xl p-8 relative">
-        <button onclick="closeByuModal('modal-soporte')" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-xl">&times;</button>
-        <div class="text-[#00ff66] font-bold tracking-wider text-xs mb-2">// CASO DE ÉXITO: BRENES & MORGAN S.A.</div>
-        <h3 class="text-xl font-bold text-white mb-4">Continuidad Operativa de Alta Disponibilidad</h3>
-        <p class="text-gray-400 text-sm mb-6 leading-relaxed">Desplegamos nuestra Mesa de Ayuda Automatizada v2 para dar soporte técnico integral nivel 1 y 2 a toda la infraestructura de la firma. Realizamos monitoreo preventivo en segundo plano de servidores y equipos para erradicar tiempos muertos.</p>
-        <div class="border-t border-gray-900 pt-4">
-            <div class="text-xs text-gray-500 font-bold tracking-wide uppercase mb-2">Métricas de Impacto:</div>
-            <ul class="text-sm text-gray-300 space-y-2">
-                <li>• <strong class="text-[#00ff66]">&lt; 3 minutos</strong> de tiempo de respuesta garantizado ante cualquier incidente técnico.</li>
-                <li>• <strong class="text-[#00ff66]">99.9% de disponibilidad</strong> operativa (Uptime) en los sistemas del negocio.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div id="modal-seguridad" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-[#0d0d0d] border border-gray-800 max-w-lg w-full rounded-xl p-8 relative">
-        <button onclick="closeByuModal('modal-seguridad')" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-xl">&times;</button>
-        <div class="text-[#00ff66] font-bold tracking-wider text-xs mb-2">// SECTOR EN DESARROLLO</div>
-        <h3 class="text-xl font-bold text-white mb-4">Sistemas de Monitoreo Inteligente</h3>
-        <p class="text-gray-400 text-sm mb-6 leading-relaxed">Estamos diseñando arquitecturas modulares avanzadas de encriptación simétrica para centrales de monitoreo y endurecimiento de firewalls perimetrales. Próximamente publicaremos las métricas de este bloque central.</p>
-        <div class="border-t border-gray-900 pt-4">
-            <button onclick="closeByuModal('modal-seguridad')" class="bg-gray-900 hover:bg-gray-850 text-white text-xs px-4 py-2 rounded border border-gray-800 transition-all">Entendido</button>
-        </div>
-    </div>
-</div>
-
-<script>
-function openByuModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
-    }
-}
-function closeByuModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.classList.remove('flex');
-        modal.classList.add('hidden');
-    }
-}
-</script>
-<section id="contacto" class="py-16 bg-black text-white w-full border-t border-gray-900">
-    <div class="max-w-3xl mx-auto px-6">
-        
-        <div class="border border-gray-800 bg-[#070707] rounded-t-xl p-4 flex items-center justify-between border-b-0">
-            <div class="flex items-center gap-2">
-                <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
-                <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
-                <span class="w-3 h-3 rounded-full bg-[#00ff66]/80 inline-block"></span>
-                <span class="text-xs text-gray-500 font-mono ml-2">byutech_operator@terminal:~</span>
-            </div>
-            <div class="text-xs text-gray-600 font-mono uppercase tracking-widest">[ SECURE CONNECTION ]</div>
-        </div>
-
-        <div class="border border-gray-800 bg-[#0d0d0d] rounded-b-xl p-8 font-mono">
-            <div class="mb-6">
-                <h3 class="text-lg font-bold text-white tracking-wide">// SOLICITAR DIAGNÓSTICO DE SISTEMA V1.0</h3>
-                <p class="text-xs text-gray-500 mt-1">Ingrese las credenciales operativas de su negocio para agendar una auditoría o demo automatizada.</p>
-            </div>
-
-            <form id="contact-form" class="space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-xs text-[#00ff66] uppercase tracking-wider mb-2">> NOMBRE_DEL_OPERADOR:</label>
-                        <input type="text" name="user_name" required placeholder="Ej: Walter Brenes" class="w-full bg-black border border-gray-800 rounded p-3 text-sm text-gray-300 focus:outline-none focus:border-[#00ff66] transition-colors placeholder-gray-700">
-                    </div>
-                    
-                    <div>
-                        <label class="block text-xs text-[#00ff66] uppercase tracking-wider mb-2">> CORREO_CORPORATIVO:</label>
-                        <input type="email" name="user_email" required placeholder="Ej: nombre@empresa.com" class="w-full bg-black border border-gray-800 rounded p-3 text-sm text-gray-300 focus:outline-none focus:border-[#00ff66] transition-colors placeholder-gray-700">
-                    </div>
-                </div>
+                <button onclick="openByuModal('modal-construccion')" class="border border-gray-800 bg-gray-950 p-6 rounded-lg hover:border-[#00ff66] transition-all duration-300 group text-left focus:outline-none">
+                    <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ CONSTRUCCIÓN ]</div>
+                    <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">Caso Brenes & Morgan S.A. Sincronización de operaciones campo-oficina.</p>
+                </button>
 
-                <div>
-                    <label class="block text-xs text-[#00ff66] uppercase tracking-wider mb-2">> COMPAÑÍA_Y_SECTOR:</label>
-                    <input type="text" name="user_company" required placeholder="Ej: Brenes & Morgan S.A. - Construcción" class="w-full bg-black border border-gray-800 rounded p-3 text-sm text-gray-300 focus:outline-none focus:border-[#00ff66] transition-colors placeholder-gray-700">
-                </div>
+                <button onclick="openByuModal('modal-finanzas')" class="border border-gray-800 bg-gray-950 p-6 rounded-lg hover:border-[#00ff66] transition-all duration-300 group text-left focus:outline-none">
+                    <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ FINANZAS & CONTABILIDAD ]</div>
+                    <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">Automatización de planillas, costos por proyecto y conciliación fiscal.</p>
+                </button>
 
-                <div>
-                    <label class="block text-xs text-[#00ff66] uppercase tracking-wider mb-2">> SÍNTOMAS_O_LOGS_DEL_PROBLEMA:</label>
-                    <textarea name="message" rows="4" required placeholder="Describa brevemente qué procesos desea automatizar o qué fallas presenta su infraestructura actual..." class="w-full bg-black border border-gray-800 rounded p-3 text-sm text-gray-300 focus:outline-none focus:border-[#00ff66] transition-colors placeholder-gray-700 resize-none"></textarea>
-                </div>
+                <button onclick="openByuModal('modal-soporte')" class="border border-gray-800 bg-gray-950 p-6 rounded-lg hover:border-[#00ff66] transition-all duration-300 group text-left focus:outline-none">
+                    <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ SOPORTE TI / HELP DESK ]</div>
+                    <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">Continuidad de alta disponibilidad y soporte preventivo Mesa v2.</p>
+                </button>
 
-                <div class="pt-2">
-                    <button type="submit" class="w-full bg-transparent border border-[#00ff66] text-[#00ff66] py-4 rounded font-bold tracking-widest text-xs uppercase hover:bg-[#00ff66] hover:text-black transition-all duration-300 shadow-[0_0_15px_rgba(0,255,102,0.1)] hover:shadow-[0_0_25px_rgba(0,255,102,0.3)] focus:outline-none">
-                        [ INICIAR AUDITORÍA TÉCNICA - EJECUTAR ]
-                    </button>
-                </div>
+                <button onclick="openByuModal('modal-seguridad')" class="border border-gray-800 bg-gray-950 p-6 rounded-lg hover:border-[#00ff66] transition-all duration-300 group text-left focus:outline-none">
+                    <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ SEGURIDAD PRIVADA ]</div>
+                    <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">Próximamente: Sistemas integrados de encriptación y monitoreo perimetral.</p>
+                </button>
 
-            </form>
+            </div>
         </div>
+    </section>
 
+    <div id="modal-construccion" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 animate-fade-in">
+        <div class="bg-[#0d0d0d] border border-gray-800 max-w-lg w-full rounded-xl p-8 relative">
+            <button onclick="closeByuModal('modal-construccion')" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-xl">&times;</button>
+            <div class="text-[#00ff66] font-bold tracking-wider text-xs mb-2">// CASO DE ÉXITO: BRENES & MORGAN S.A.</div>
+            <h3 class="text-xl font-bold text-white mb-4">Sincronización de Operaciones en Campo y Oficina</h3>
+            <p class="text-gray-400 text-sm mb-6 leading-relaxed">Diseñamos un ecosistema digital centralizado que conecta los reportes diarios de las obras directamente con los servidores centrales mediante canales encriptados y automatizados, eliminando la lentitud en pedidos de materiales y desfases presupuestarios.</p>
+            <div class="border-t border-gray-900 pt-4">
+                <div class="text-xs text-gray-500 font-bold tracking-wide uppercase mb-2">Métricas de Impacto:</div>
+                <ul class="text-sm text-gray-300 space-y-2">
+                    <li>• <strong class="text-[#00ff66]">40% de reducción</strong> en tiempos de espera para aprobación de órdenes de compra.</li>
+                    <li>• <strong class="text-[#00ff66]">Tolerancia cero a pérdidas</strong> de información o planos en proyectos.</li>
+                </ul>
+            </div>
+        </div>
     </div>
-</section>
-<footer class="border-t border-gray-900 bg-gray-950 py-12 px-6 text-center text-sm text-gray-500 w-full">
+
+    <div id="modal-finanzas" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-[#0d0d0d] border border-gray-800 max-w-lg w-full rounded-xl p-8 relative">
+            <button onclick="closeByuModal('modal-finanzas')" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-xl">&times;</button>
+            <div class="text-[#00ff66] font-bold tracking-wider text-xs mb-2">// CASO DE ÉXITO: BRENES & MORGAN S.A.</div>
+            <h3 class="text-xl font-bold text-white mb-4">Automatización de Planillas y Conciliación Fiscal</h3>
+            <p class="text-gray-400 text-sm mb-6 leading-relaxed">Implementamos un motor de automatización inteligente basado en scripts autónomos que extrae, clasifica y procesa los datos financieros de proveedores y subcontratistas, cruzando la información con bancos de forma inmediata y eliminando la carga operativa manual.</p>
+            <div class="border-t border-gray-900 pt-4">
+                <div class="text-xs text-gray-500 font-bold tracking-wide uppercase mb-2">Métricas de Impacto:</div>
+                <ul class="text-sm text-gray-300 space-y-2">
+                    <li>• <strong class="text-[#00ff66]">15+ horas semanales</strong> liberadas de trabajo manual repetitivo en contabilidad.</li>
+                    <li>• <strong class="text-[#00ff66]">Eliminación del 100%</strong> de errores humanos en la asignación de costos por obra.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-soporte" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-[#0d0d0d] border border-gray-800 max-w-lg w-full rounded-xl p-8 relative">
+            <button onclick="closeByuModal('modal-soporte')" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-xl">&times;</button>
+            <div class="text-[#00ff66] font-bold tracking-wider text-xs mb-2">// CASO DE ÉXITO: BRENES & MORGAN S.A.</div>
+            <h3 class="text-xl font-bold text-white mb-4">Continuidad Operativa de Alta Disponibilidad</h3>
+            <p class="text-gray-400 text-sm mb-6 leading-relaxed">Desplegamos nuestra Mesa de Ayuda Automatizada v2 para dar soporte técnico integral nivel 1 y 2 a toda la infraestructura de la firma. Realizamos monitoreo preventivo en segundo plano de servidores y equipos para erradicar tiempos muertos.</p>
+            <div class="border-t border-gray-900 pt-4">
+                <div class="text-xs text-gray-500 font-bold tracking-wide uppercase mb-2">Métricas de Impacto:</div>
+                <ul class="text-sm text-gray-300 space-y-2">
+                    <li>• <strong class="text-[#00ff66]">&lt; 3 minutos</strong> de tiempo de respuesta garantizado ante cualquier incidente técnico.</li>
+                    <li>• <strong class="text-[#00ff66]">99.9% de disponibilidad</strong> operativa (Uptime) en los sistemas del negocio.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-seguridad" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-[#0d0d0d] border border-gray-800 max-w-lg w-full rounded-xl p-8 relative">
+            <button onclick="closeByuModal('modal-seguridad')" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-xl">&times;</button>
+            <div class="text-[#00ff66] font-bold tracking-wider text-xs mb-2">// SECTOR EN DESARROLLO</div>
+            <h3 class="text-xl font-bold text-white mb-4">Sistemas de Monitoreo Inteligente</h3>
+            <p class="text-gray-400 text-sm mb-6 leading-relaxed">Estamos diseñando arquitecturas modulares avanzadas de encriptación simétrica para centrales de monitoreo y endurecimiento de firewalls perimetrales. Próximamente publicaremos las métricas de este bloque central.</p>
+            <div class="border-t border-gray-900 pt-4">
+                <button onclick="closeByuModal('modal-seguridad')" class="bg-gray-900 hover:bg-gray-850 text-white text-xs px-4 py-2 rounded border border-gray-800 transition-all">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function openByuModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+    }
+    function closeByuModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+    }
+    </script>
+
+    <section id="contacto" class="py-16 bg-black text-white w-full border-t border-gray-900">
+        <div class="max-w-3xl mx-auto px-6">
+            
+            <div class="border border-gray-800 bg-[#070707] rounded-t-xl p-4 flex items-center justify-between border-b-0">
+                <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-[#00ff66]/80 inline-block"></span>
+                    <span class="text-xs text-gray-500 font-mono ml-2">byutech_operator@terminal:~</span>
+                </div>
+                <div class="text-xs text-gray-600 font-mono uppercase tracking-widest">[ SECURE CONNECTION ]</div>
+            </div>
+
+            <div class="border border-gray-800 bg-[#0d0d0d] rounded-b-xl p-8 font-mono">
+                <div class="mb-6">
+                    <h3 class="text-lg font-bold text-white tracking-wide">// SOLICITAR DIAGNÓSTICO DE SISTEMA V1.0</h3>
+                    <p class="text-xs text-gray-500 mt-1">Ingrese las credenciales operativas de su negocio para agendar una auditoría o demo automatizada.</p>
+                </div>
+
+                <form id="contact-form" class="space-y-6">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs text-[#00ff66] uppercase tracking-wider mb-2">> NOMBRE_DEL_OPERADOR:</label>
+                            <input type="text" name="user_name" required placeholder="Ej: Walter Brenes" class="w-full bg-black border border-gray-800 rounded p-3 text-sm text-gray-300 focus:outline-none focus:border-[#00ff66] transition-colors placeholder-gray-700">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-xs text-[#00ff66] uppercase tracking-wider mb-2">> CORREO_CORPORATIVO:</label>
+                            <input type="email" name="user_email" required placeholder="Ej: nombre@empresa.com" class="w-full bg-black border border-gray-800 rounded p-3 text-sm text-gray-300 focus:outline-none focus:border-[#00ff66] transition-colors placeholder-gray-700">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs text-[#00ff66] uppercase tracking-wider mb-2">> COMPAÑÍA_Y_SECTOR:</label>
+                        <input type="text" name="user_company" required placeholder="Ej: Brenes & Morgan S.A. - Construcción" class="w-full bg-black border border-gray-800 rounded p-3 text-sm text-gray-300 focus:outline-none focus:border-[#00ff66] transition-colors placeholder-gray-700">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs text-[#00ff66] uppercase tracking-wider mb-2">> SÍNTOMAS_O_LOGS_DEL_PROBLEMA:</label>
+                        <textarea name="message" rows="4" required placeholder="Describa brevemente qué procesos desea automatizar o qué fallas presenta su infraestructura actual..." class="w-full bg-black border border-gray-800 rounded p-3 text-sm text-gray-300 focus:outline-none focus:border-[#00ff66] transition-colors placeholder-gray-700 resize-none"></textarea>
+                    </div>
+
+                    <div class="pt-2">
+                        <button type="submit" class="w-full bg-transparent border border-[#00ff66] text-[#00ff66] py-4 rounded font-bold tracking-widest text-xs uppercase hover:bg-[#00ff66] hover:text-black transition-all duration-300 shadow-[0_0_15px_rgba(0,255,102,0.1)] hover:shadow-[0_0_25px_rgba(0,255,102,0.3)] focus:outline-none">
+                            [ INICIAR AUDITORÍA TÉCNICA - EJECUTAR ]
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+    
+    <footer class="border-t border-gray-900 bg-gray-950 py-12 px-6 text-center text-sm text-gray-500 w-full">
         <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
             
             <div class="flex text-left items-center gap-4">
@@ -444,7 +513,7 @@ function closeByuModal(modalId) {
 
             <div class="flex gap-6 my-4 md:my-0">
                 <a href="#inicio" class="text-gray-400 hover:text-[#00ff66] transition-colors duration-300 text-sm no-underline">Inicio</a>
-                <a href="#modulos" class="text-gray-400 hover:text-[#00ff66] transition-colors duration-300 text-sm no-underline">Módulos Core</a>
+                <a href="#producto" class="text-gray-400 hover:text-[#00ff66] transition-colors duration-300 text-sm no-underline">Módulos Core</a>
                 <a href="#casos" class="text-gray-400 hover:text-[#00ff66] transition-colors duration-300 text-sm no-underline">Casos de Éxito</a>
             </div>
 
@@ -455,5 +524,65 @@ function closeByuModal(modalId) {
         </div>
     </footer>
 
+    <!-- ============================================================ -->
+    <!-- SCRIPT DE ANIMACIÓN WEB PARA LA CONSOLA CYBER360 -->
+    <!-- ============================================================ -->
+    <script>
+        const secuenciaCyber = [
+            { texto: "🤖 [BYUTECH CYBER360] Inicializando auditoría preventiva...", tipo: "normal", pausa: 1000 },
+            { texto: "📡 MÓDULO 1: Conectando con motores de inteligencia ShadowScan...", tipo: "normal", pausa: 1000 },
+            { texto: "🔍 Rastreando credenciales corporativas expuestas en la Dark Web...", tipo: "normal", pausa: 1200 },
+            { texto: "🚨 ¡ALERTA! Se localizaron registros expuestos de su personal en foros OSINT.", tipo: "alerta", pausa: 1800 },
+            { texto: "------------------------------------------------------------", tipo: "normal", pausa: 400 },
+            { texto: "📧 MÓDULO 2: Activando evaluación interna 'Human Firewall AI'...", tipo: "normal", pausa: 1000 },
+            { texto: "🎯 Lanzando campaña de Phishing ético simulado con ingeniería social...", tipo: "normal", pausa: 1200 },
+            { texto: "❌ Impacto: El departamento comercial ingresó credenciales en portal falso.", tipo: "alerta", pausa: 1800 },
+            { texto: "------------------------------------------------------------", tipo: "normal", pausa: 400 },
+            { texto: "🛡️ MÓDULO 3: Verificando políticas de Ciber-Resiliencia...", tipo: "normal", pausa: 1000 },
+            { texto: "💥 CRISIS SIMULADA: Servidores locales encriptados por Ransomware.", tipo: "alerta", pausa: 1500 },
+            { texto: "🚀 Desplegando copias de seguridad inmutables desde los nodos BYUTech...", tipo: "normal", pausa: 1200 },
+            { texto: "✅ ÉXITO: Continuidad corporativa garantizada. Restauración al 100% en 18 minutos.", tipo: "exito", pausa: 2000 },
+            { texto: "\n📊 CONCLUSIÓN: Sistema auditado. Contrate Cyber360 para mitigar brechas reales.", tipo: "exito", pausa: 500 }
+        ];
+
+        async function ejecutarSimuladorWeb() {
+            const consola = document.getElementById('consolaCyber');
+            const boton = document.getElementById('btnEjecutarDemo');
+            
+            boton.style.visibility = 'hidden'; 
+            consola.innerHTML = ''; 
+
+            for (let i = 0; i < secuenciaCyber.length; i++) {
+                await escribirLineaCyber(consola, secuenciaCyber[i].texto, secuenciaCyber[i].tipo, secuenciaCyber[i].pausa);
+            }
+            
+            boton.style.visibility = 'visible';
+            boton.innerText = "[ REEJECUTAR AUDITORÍA ]";
+        }
+
+        function escribirLineaCyber(contenedor, texto, tipo, pausa) {
+            return new Promise((resolve) => {
+                const div = document.createElement('div');
+                div.className = 'linea-consola';
+                if (tipo === 'alerta') div.className += ' alerta-roja';
+                if (tipo === 'exito') div.className += ' exito-verde';
+                
+                contenedor.appendChild(div);
+                
+                let index = 0;
+                function renderLetra() {
+                    if (index < texto.length) {
+                        div.innerHTML += texto.charAt(index);
+                        index++;
+                        setTimeout(renderLetra, 12);
+                    } else {
+                        setTimeout(resolve, pausa);
+                    }
+                    contenedor.scrollTop = contenedor.scrollHeight;
+                }
+                renderLetra();
+            });
+        }
+    </script>
 </body>
 </html>
