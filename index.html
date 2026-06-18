@@ -130,10 +130,11 @@
                     <h3 class="text-xl font-bold mb-2">Soporte TI / Help Desk</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">Ingeniería de mesa de servicio nivel 2. Resolución automatizada de fallas de red, optimización CCNA y diagnóstico preventivo de servidores.</p>
                 </div>
-                <div class="bg-cyberCard p-8 rounded border border-gray-800 hover:border-cyberNeon/40 transition-all group">
+                <!-- AJUSTE 1: Enfoque unificado hacia la suite de ciberseguridad -->
+                <div class="bg-cyberCard p-8 rounded border border-gray-800 hover:border-cyberNeon/40 transition-all group cursor-pointer" onclick="location.href='#cyber360'">
                     <div class="text-cyberNeon font-future text-2xl mb-4 opacity-70 group-hover:opacity-100">03 / CYBERSEC</div>
-                    <h3 class="text-xl font-bold mb-2">Seguridad Perimetral</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Protección de centrales de monitoreo, cifrado de bitácoras de vigilancia y contención ante intrusiones o ataques dirigidos DDoS.</p>
+                    <h3 class="text-xl font-bold mb-2">Suite Cyber360 Proactiva</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Defensa digital integral. Mitigación contra secuestros de datos (Ransomware) e ingeniería social corporativa mediante auditorías continuas. Pruebe la demo abajo.</p>
                 </div>
             </div>
         </div>
@@ -148,14 +149,14 @@
             <p class="text-gray-400 max-w-2xl mx-auto mb-10 text-sm font-light">Protección perimetral proactiva, concientización de personal y resiliencia activa contra Ransomware.</p>
 
             <!-- Consola de simulación estilo Hacker -->
-            <div id="consolaCyber" class="w-full max-w-3xl height h-[360px] bg-[#05070A] border-2 border-gray-800 rounded-lg p-5 shadow-inner overflow-y-auto text-left mb-8 mx-auto text-[#00ff66] font-mono box-border">
+            <div id="consolaCyber" class="w-full max-w-3xl h-[360px] bg-[#05070A] border-2 border-gray-800 rounded-lg p-5 shadow-inner overflow-y-auto text-left mb-8 mx-auto text-[#00ff66] font-mono box-border">
                 <div class="text-gray-500 text-center pt-32 text-sm">
                     Pulse el comando de abajo para inicializar el entorno de diagnóstico interactivo Cyber360.
                 </div>
             </div>
 
             <!-- Botón Desparador -->
-            <button id="btnEjecutarDemo" onclick="ejecutarSimuladorWeb()" class="bg-transparent border border-[#00ff66] text-[#00ff66] font-bold font-future px-8 py-4 rounded shadow-[0_0_15px_rgba(0,255,102,0.1)] hover:bg-[#00ff66] hover:text-black hover:shadow-[0_0_25px_rgba(0,255,102,0.4)] transition-all duration-300 text-xs tracking-widest uppercase mb-16">
+            <button id="btnEjecutarDemo" onclick="ejeculadorSimuladorWeb()" class="bg-transparent border border-[#00ff66] text-[#00ff66] font-bold font-future px-8 py-4 rounded shadow-[0_0_15px_rgba(0,255,102,0.1)] hover:bg-[#00ff66] hover:text-black hover:shadow-[0_0_25px_rgba(0,255,102,0.4)] transition-all duration-300 text-xs tracking-widest uppercase mb-16">
                 [ EJECUTAR DIAGNÓSTICO DE PRUEBA ]
             </button>
 
@@ -201,10 +202,11 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
+                <!-- AJUSTE 2: Sincronización del catálogo con los scripts de Python de BYUTech -->
                 <div class="border border-gray-800 p-8 rounded bg-gradient-to-br from-cyberCard to-cyberDark hover:border-cyberNeon/40 transition-all">
-                    <h3 class="text-lg font-bold font-future text-cyberNeon mb-2">BYUTech DataShield Pro</h3>
+                    <h3 class="text-lg font-bold font-future text-cyberNeon mb-2">BYUTech Cyber-Resilience Engine</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Filtro, encriptación y anonimización de datos sensibles a nivel local. Protege secretos comerciales, credenciales de acceso táctico y bitácoras de seguridad sin comprometer la privacidad ni violar regulaciones locales.
+                        Infraestructura modular integrada de seguridad defensiva. Ejecuta auditorías automatizadas en la Dark Web mediante **ShadowScan** y blinda el almacenamiento operativo mediante respaldos cifrados redundantes e inmutables.
                     </p>
                 </div>
                 <div class="border border-gray-800 p-8 rounded bg-gradient-to-br from-cyberCard to-cyberDark hover:border-cyberPurple/40 transition-all">
@@ -545,7 +547,7 @@
             { texto: "\n📊 CONCLUSIÓN: Sistema auditado. Contrate Cyber360 para mitigar brechas reales.", tipo: "exito", pausa: 500 }
         ];
 
-        async function ejecutarSimuladorWeb() {
+        async function ejecutadorSimuladorWeb() {
             const consola = document.getElementById('consolaCyber');
             const boton = document.getElementById('btnEjecutarDemo');
             
