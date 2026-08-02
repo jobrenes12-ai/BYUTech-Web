@@ -5,27 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BYUTech | División de Automatización y Soluciones TI de Avanzada</title>
     
+    <!-- Metadatos Open Graph para compartir en WhatsApp/LinkedIn con vista previa -->
+    <meta property="og:title" content="BYUTech | División de Automatización y Soluciones TI">
+    <meta property="og:description" content="Optimización de procesos, arquitecturas de software y automatización con Inteligencia Artificial. Respaldo institucional.">
+    <meta property="og:image" content="https://byutech.net/logo-horizontal.png">
+    <meta property="og:url" content="https://byutech.net">
+    <meta property="og:type" content="website">
+
     <link class="rounded" rel="icon" type="image/jpeg" href="./logo-circular.jpeg">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        cyberDark: '#0B0F19',
-                        cyberCard: '#151D30',
-                        cyberNeon: '#00F0FF',
-                        cyberPurple: '#9D4EDD'
-                    },
-                    boxShadow: {
-                        neonGlow: '0 0 15px rgba(0, 240, 255, 0.4)',
-                        purpleGlow: '0 0 15px rgba(157, 78, 221, 0.4)'
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- CSS Compilado de Producción (Reemplaza al CDN de Tailwind) -->
+    <link rel="stylesheet" href="./styles.css">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap');
         .font-future { font-family: 'Orbitron', sans-serif; }
@@ -183,14 +174,16 @@
 
     <section id="cyber360" class="py-24 bg-gray-950 px-6 border-t border-gray-900 text-center">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold font-future text-white mb-2 tracking-wide">🛡️ SUITE INTERACTIVA CYBER360</h2>
+            <h2 class="text-3xl md:text-4xl font-bold font-future text-white mb-2 tracking-wide">SUITE INTERACTIVA CYBER360</h2>
             <p class="text-gray-400 max-w-2xl mx-auto mb-10 text-sm font-light">Módulo demostrativo de protección perimetral proactiva, concientización de personal y resiliencia activa.</p>
 
-            <div id="consolaCyber" class="w-full max-w-3xl h-[360px] bg-[#05070A] border-2 border-gray-800 rounded-lg p-5 shadow-inner overflow-y-auto text-left mb-8 mx-auto text-[#00ff66] font-mono box-border">
+            <div id="consolaCyber" class="w-full max-w-3xl h-[360px] bg-[#05070A] border-2 border-gray-800 rounded-lg p-5 shadow-inner overflow-y-auto text-left mb-4 mx-auto text-[#00ff66] font-mono box-border">
                 <div class="text-gray-500 text-center pt-32 text-sm">
                     Pulse el comando de abajo para inicializar el entorno de diagnóstico interactivo Cyber360.
                 </div>
             </div>
+            
+            <p class="text-[11px] text-gray-500 mb-8 italic max-w-3xl mx-auto">* Nota: Esta consola es una simulación ilustrativa con fines demostrativos, no ejecuta un escaneo real en su red local.</p>
 
             <button id="btnEjecutarDemo" onclick="ejecutarSimuladorWeb()" class="bg-transparent border border-[#00ff66] text-[#00ff66] font-bold font-future px-8 py-4 rounded shadow-[0_0_15px_rgba(0,255,102,0.1)] hover:bg-[#00ff66] hover:text-black hover:shadow-[0_0_25px_rgba(0,255,102,0.4)] transition-all duration-300 text-xs tracking-widest uppercase mb-16">
                 [ EJECUTAR DIAGNÓSTICO DE PRUEBA ]
@@ -198,7 +191,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-3xl mx-auto">
                 <div class="bg-cyberCard p-6 rounded border border-gray-800 hover:border-cyberNeon/40 transition-all duration-300">
-                    <h3 class="text-xl font-bold font-future text-cyberNeon mb-1">🏢 PYMES Y COMERCIOS</h3>
+                    <h3 class="text-xl font-bold font-future text-cyberNeon mb-1">PYMES Y COMERCIOS</h3>
                     <p class="text-xs text-gray-500 mb-4">Optimización de flujos operativos y canales de atención</p>
                     <div class="text-2xl font-bold text-[#00ff66] font-future mb-4">Planes de Crecimiento</div>
                     <ul class="text-gray-400 text-sm space-y-2">
@@ -208,7 +201,7 @@
                     </ul>
                 </div>
                 <div class="bg-cyberCard p-6 rounded border border-gray-800 hover:border-cyberPurple/40 transition-all duration-300">
-                    <h3 class="text-xl font-bold font-future text-cyberPurple mb-1">🚀 CORPORATIVO / INDUSTRIAL</h3>
+                    <h3 class="text-xl font-bold font-future text-cyberPurple mb-1">CORPORATIVO / INDUSTRIAL</h3>
                     <p class="text-xs text-gray-500 mb-4">Sistemas integrados de alta demanda y logística</p>
                     <div class="text-2xl font-bold text-[#00ff66] font-future mb-4">Evaluación de Estructura</div>
                     <ul class="text-gray-400 text-sm space-y-2">
@@ -282,12 +275,13 @@
         </div>
     </section>
 
+    <!-- Bitácora (Ahora con 5 botones) -->
     <section id="casos" class="py-16 bg-black text-white w-full border-t border-gray-900">
         <div class="max-w-6xl mx-auto px-6 text-center">
             <h2 class="font-future text-2xl md:text-3xl font-bold tracking-widest text-[#00ff66] mb-4">BITÁCORA DE DESARROLLO Y ANÁLISIS</h2>
             <p class="text-gray-400 max-w-2xl mx-auto mb-12 text-sm">Seleccione un bloque sectorial para desplegar la estructura de soluciones lógicas y métricas validadas por BYUTech.</p>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
                 <button onclick="openByuModal('modal-construccion')" class="border border-gray-800 bg-gray-950 p-6 rounded-lg hover:border-[#00ff66] transition-all duration-300 group text-left focus:outline-none">
                     <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ CONSTRUCCIÓN & INFRAESTRUCTURA ]</div>
                     <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">Caso Brenes & Morgan S.A. Sincronización de operaciones campo-oficina con respaldo legal.</p>
@@ -304,10 +298,16 @@
                     <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ SECTOR ONG / INSTITUCIONAL ]</div>
                     <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">La Iglesia de Jesucristo de los Santos de los Últimos Días. Optimización y enrutamiento seguro de datos.</p>
                 </button>
+                <!-- Botón de Seguridad Agregado para el Modal Muerto -->
+                <button onclick="openByuModal('modal-seguridad')" class="border border-gray-800 bg-gray-950 p-6 rounded-lg hover:border-[#00ff66] transition-all duration-300 group text-left focus:outline-none">
+                    <div class="text-[#00ff66] font-bold tracking-wider text-sm mb-2">[ CIBERSEGURIDAD PERIMETRAL ]</div>
+                    <p class="text-xs text-gray-500 group-hover:text-gray-300 transition-colors">Sistemas de monitoreo inteligente, encriptación simétrica y endurecimiento de firewalls.</p>
+                </button>
             </div>
         </div>
     </section>
 
+    <!-- Modales -->
     <div id="modal-construccion" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="bg-[#0d0d0d] border border-gray-800 max-w-lg w-full rounded-xl p-8 relative">
             <button onclick="closeByuModal('modal-construccion')" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-xl">&times;</button>
@@ -373,6 +373,7 @@
         </div>
     </div>
 
+    <!-- Modal de Seguridad (Corregido hover:bg-gray-850 a hover:bg-gray-800) -->
     <div id="modal-seguridad" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="bg-[#0d0d0d] border border-gray-800 max-w-lg w-full rounded-xl p-8 relative">
             <button onclick="closeByuModal('modal-seguridad')" class="absolute top-4 right-4 text-gray-500 hover:text-white font-bold text-xl">&times;</button>
@@ -380,7 +381,7 @@
             <h3 class="text-xl font-bold text-white mb-4">Sistemas de Monitoreo Inteligente</h3>
             <p class="text-gray-400 text-sm mb-6 leading-relaxed">Estamos diseñando arquitecturas modulares avanzadas de encriptación simétrica para centrales de monitoreo y endurecimiento de firewalls perimetrales. Próximamente publicaremos las métricas de este bloque de ciberseguridad.</p>
             <div class="border-t border-gray-900 pt-4">
-                <div class="bg-gray-900 hover:bg-gray-850 text-white text-xs px-4 py-2 rounded border border-gray-800 transition-all cursor-pointer inline-block" onclick="closeByuModal('modal-seguridad')">Entendido</div>
+                <div class="bg-gray-900 hover:bg-gray-800 text-white text-xs px-4 py-2 rounded border border-gray-800 transition-all cursor-pointer inline-block" onclick="closeByuModal('modal-seguridad')">Entendido</div>
             </div>
         </div>
     </div>
@@ -460,6 +461,41 @@
     </footer>
 
     <script>
+        function openByuModal(idModal) {
+            const modal = document.getElementById(idModal);
+            if (modal) modal.classList.remove('hidden');
+        }
+
+        function closeByuModal(idModal) {
+            const modal = document.getElementById(idModal);
+            if (modal) modal.classList.add('hidden');
+        }
+
+        // Formulario a WhatsApp
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('contact-form');
+            if(form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    const nombre = form.querySelector('[name="user_name"]').value;
+                    const email = form.querySelector('[name="user_email"]').value;
+                    const empresa = form.querySelector('[name="user_company"]').value;
+                    const mensaje = form.querySelector('[name="message"]').value;
+
+                    // Armando el string para WhatsApp
+                    const textoWA = encodeURIComponent(`Hola Walter, quiero agendar una auditoría.\n\n*Nombre:* ${nombre}\n*Correo:* ${email}\n*Empresa:* ${empresa}\n*Requerimiento:* ${mensaje}`);
+                    
+                    // URL a tu WhatsApp (igual que los otros botones)
+                    const url = `https://wa.me/50671486745?text=${textoWA}`;
+                    
+                    // Abrir en nueva pestaña
+                    window.open(url, '_blank');
+                    form.reset();
+                });
+            }
+        });
+
         const secuenciaCyber = [
             { texto: "🤖 [BYUTECH CYBER360] Inicializando auditoría preventiva...", tipo: "normal", pausa: 1000 },
             { texto: "📡 MÓDULO 1: Conectando con motores de análisis perimetral NetShield...", tipo: "normal", pausa: 1000 },
